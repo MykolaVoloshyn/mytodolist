@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'todolist/css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>TO DO LIST</title>
+</head>
+<body>
+<div class="container">
+  {% block content %}
+  {% endblock %}
+</div>
+</body>
+</html>

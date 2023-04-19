@@ -1,0 +1,15 @@
+{% extends 'todolist/base.html' %}
+
+{% block content %}
+<div class="header-bar">
+<a id="go-back" href="{% url 'main' %}">&#8678; Назад</a>
+</div>
+
+<div class="card-body">
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input class="button" type="submit" value="Зберегти">
+</form>
+</div>
+{% endblock %}

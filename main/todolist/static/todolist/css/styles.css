@@ -1,0 +1,116 @@
+body{
+    background-color: #F7F7F7;
+    padding-top: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+.container {
+    max-width: 550px;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.6)
+
+}
+a,p {
+    color: #1b265e;
+    font-weight: 700;
+}
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    color: #FAFAFA;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(135deg, #6a73a8 20%, #3F497F 50%, #28305c 85%);
+}
+.header-bar h1,h4 {
+    padding-left: 10px;
+}
+.header-bar a {
+    color: #FAFAFA;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #e2e2e2;
+    border-radius: 0 0 10px 10px;
+}
+.task-title {
+    display: flex;
+
+}
+.task-title a {
+    text-decoration: none;
+    color: #1b265e;
+    margin-left: 10px;
+}
+.task-complete-icon {
+    height: 20px;
+    width: 20px;
+
+}
+.task-incomplete-icon {
+    height: 20px;
+    width: 20px;
+
+}
+.delete-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #cf4949;
+    font-size: 22px;
+    line-height: 0;
+}
+.search-add-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.add-link {
+    color: #228a27;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 35px;
+    margin-right: 7px;
+}
+
+input[type=text],input[type=password],textarea {
+    font-size: 17px;
+    border: 1px solid #3F497F;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}
+label {
+    padding-top: 10px !important;
+    display: block;
+}
+
+.card-body {
+    padding: 5px 20px 20px;
+}
+
+.log-body {
+    padding: 5px 20px 1px;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #1b265e;
+    background-color: #FAFAFA;
+    color: #3F497F;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#go-back {
+    padding-left: 10px;
+}

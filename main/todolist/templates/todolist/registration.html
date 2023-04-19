@@ -1,0 +1,17 @@
+{% extends 'todolist/base.html' %}
+{% block content %}
+
+<div class="header-bar">
+  <h1>Реєстрація</h1>
+</div>
+
+<div class="log-body">
+  <form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="button" type="submit" value="Зареєструватись">
+  </form>
+    <p>Уже створений аккаунт?&nbsp;<a href="{% url 'login' %}">Увійти</a></p>
+</div>
+
+{% endblock %}

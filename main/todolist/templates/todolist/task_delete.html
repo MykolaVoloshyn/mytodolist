@@ -1,0 +1,16 @@
+{% extends 'todolist/base.html' %}
+
+{% block content %}
+<div class="header-bar">
+  <a id="go-back" href="{% url 'main' %}">&#8678; Назад</a>
+</div>
+
+<div class="card-body">
+  <form action="{% url 'delete' task.pk %}" method="post">
+    {% csrf_token %}
+    <p>Ви впевнені, що хочете видалити завдання: {{ task }}?</p>
+    <input class="button" type="submit" value="Так, видалити">
+  </form>
+</div>
+
+{% endblock %}
